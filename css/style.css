@@ -1,0 +1,553 @@
+
+body{
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo{
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  z-index: 1;
+}
+body nav ul{
+  list-style: none;
+   float: right;
+   margin: 0;
+   padding: 0;
+}
+header{
+  border-radius: 5px;
+  height: 79px;
+  background-color: rgba(128,128,128,1);
+  width: 100%;
+  margin: 0 auto; 
+}
+body nav ul li{
+  display: inline;
+  padding: 15px; 
+  line-height: 70px;
+}
+body nav ul li a{
+ text-decoration: none;
+ color: black;
+ background-color: lightblue;
+  border-radius: 5px;
+  padding: 4px;
+  transition: all;
+  transition-duration: 0.5s;
+}
+body nav ul li a:hover{
+  transition: all;
+  transition-duration: 2s;
+  border-top: 3px solid blue;
+  font-size: 18px;
+  background-color: lightgray;
+  color: blue;
+}
+#images{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.image1{
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  margin: 40px;
+  transition: width, height, border-radius;
+  transition-duration: 0.7s;
+}
+.image1:hover{
+   transition: width, height, border-radius;
+  transition-duration: 2s;
+  width: 500px;
+  height: 350px;
+  border-radius: 50px;
+}
+
+.réservation{
+ width: 80%;
+ margin: 0 auto;
+ text-align: center;
+  margin-top: 60px;
+}
+.reserve{
+  box-shadow: 2px 2px white;
+  text-transform: uppercase;
+  padding: 6px 29px 6px 29px;
+  border-radius: 22px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+#réservation1{
+  background-color: blue;
+}
+#réservation2{
+  background-color: orange;
+}
+.tour{
+  margin-top: 70px; 
+  margin-bottom: 70px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+#description{
+  color: white;
+  font-size: 30px;
+  line-height: 1.2em;
+  text-align: justify;
+  margin: 20px 0px 20px 0px;
+  background-color: rgba(128,128,128,1);
+  padding: 50px;
+  border-radius: 25px;
+}
+footer{
+   background-color: gray;
+  border-radius: 5px;
+  margin-top: 100px;
+}
+#me{
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+footer section{
+  display: inline-block;
+  background-color: lightgray;
+  width: 30%;
+  height: 150px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 1em;
+}
+footer section button{
+  background-color: blue;
+  color: black;
+  font-size: 15px;
+  box-shadow: 5px 5px 5px lightblue;
+}
+footer section input{
+  color: blue;
+}
+footer section h3{
+   font-size: 20px;
+}
+/**********************INFO**********************************/
+
+img.vil{
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
+  display: inline-block;
+  margin-top: 60px;
+  margin-left: 100px;
+  margin-right: -50px;
+}
+div#vile{
+  margin-left: 100px; 
+  width: 90%;
+  margin-top: 50px;
+}
+#vil1{
+  width: 480px;
+  height: 280px;
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0;
+}
+#vil1:hover{
+  transition-duration: 1s;
+	background-color: rgba(255,165,0,0.5);
+  opacity: 1;
+}
+#vil2{
+  width: 480px;
+  height: 280px;
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 552px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0;
+}
+#vil2:hover{
+  transition-duration: 1s;
+  background-color: rgba(255,165,0,0.5);
+  opacity: 1;
+}
+#vil3{
+  position: absolute;
+  margin-top: 425px;
+  margin-left: 0px;
+  width: 480px;
+  height: 280px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0;
+}
+#vil3:hover{
+  transition-duration: 1s;
+  background-color: rgba(255,165,0,0.5);
+  opacity: 1;
+}
+
+#vil4{
+  /*border: 2px solid coral;*/
+  position: absolute;
+  margin-top: 425px;
+  margin-left: 553px;
+  width: 480px;
+  height: 280px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0;
+}
+#vil4:hover{
+  transition-duration: 1s;
+  background-color: rgba(255,165,0,0.5);
+  opacity: 1;
+}
+
+#vil5{
+  /*border: 2px solid coral;*/
+  position: absolute;
+  margin-top: 788px;
+  margin-left: 0px;
+  width: 480px;
+  height: 280px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0;
+}
+#vil5:hover{
+  transition-duration: 1s;
+  background-color: rgba(255,165,0,0.5);
+  opacity: 1;
+}
+
+#vil6{
+  /*border: 2px solid coral;*/
+  position: absolute;
+  margin-top: 788px;
+  margin-left: 553px;
+  width: 480px;
+  height: 280px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0;
+}
+#vil6:hover{
+  transition-duration: 1s;
+  background-color: rgba(255,165,0,0.5);
+  opacity: 1;
+}
+
+#vil7{
+  /*border: 2px solid coral;*/
+  position: absolute;
+  margin-top: 1150px;
+  margin-left: 0px;
+  width: 480px;
+  height: 280px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0;
+}
+#vil7:hover{
+  transition-duration: 1s;
+  background-color: rgba(255,165,0,0.5);
+  opacity: 1;
+}
+
+#vil8{
+  /*border: 2px solid coral;*/
+  position: absolute;
+  margin-top: 1150px;
+  margin-left: 553px;
+  width: 480px;
+  height: 280px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0;
+}
+#vil8:hover{
+  transition-duration: 1s;
+  background-color: rgba(255,165,0,0.5);
+  opacity: 1;
+}
+
+/**************************BILLET***********************************/
+#h{
+  text-align: center;
+  color: white;
+}
+#firstForm{
+  position: absolute;
+  margin-left: 60%;
+  margin-top: -2000px;
+  background-color: lightgrey;
+  width: 420px;
+  padding: 30px;
+}
+#firstTab{
+  color: black;
+  background-color: lightgrey;
+  opacity: 0.7;
+  border-radius: 5px;
+  height: 400px;
+}
+label{
+  margin-right: 30px;
+}
+input{
+  border-radius: 10px;
+  padding-left: 10px;
+}
+input:hover{
+  background-color: lightgrey;
+}
+input#mail{
+   width: 170px;
+}
+select{
+  border-radius: 10px;
+  padding-left: 10px;
+}
+select:hover{
+  background-color: lightgrey;
+}
+#submit{
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: blue;
+  box-shadow: 1px 1px 1px black;
+}
+
+#conf{
+  position: absolute;
+  margin-left: 1150px;
+  margin-top: -500px;
+  background-color: green;
+  height: 30px;
+  border-radius: 10px;
+}
+#redirect{
+  background-color: green;
+  width: 420px;
+  height: 80px;
+  position: absolute;
+  margin-top: -1000px;
+  border-radius: 20px;
+  opacity: 1;
+  line-height: 10px;
+  z-index: 1;
+}
+#tnom{
+  padding-top: -50px;
+  
+}
+/**************************billet:SECTION*************************/
+#sect{
+  margin-left: 50px;
+}
+#sect #secondTab img{
+  width: 400px;
+}
+#sect #secondTab td{
+  color: white;
+  font-size: 30px;
+}
+/*********************VISA****************************/
+#visa{
+  font-family: lora;
+  margin-top: 100px;
+  margin-bottom: -80px;
+  border-radius: 20px;
+  background-color: rgba(200,200,200,0.9);
+  padding: 30px;
+  font-size: 30px;
+  line-height: 1.3em;
+  text-align: justify;
+}
+/*********************QUESTION************************/
+#formQ{
+  margin-left: 10%;
+  margin-right: 59%;
+  margin-top: 15px; 
+  width: 400px;
+  height: 500px;
+  background-color: rgba(128,128,128,0.5);
+  padding: 10px 10px 0px 10px;
+  border-radius: 10px;
+  color: white;
+  font-family: lora;
+}
+#formQ label{
+  margin-right: 0px;
+}
+#formQ h1{ 
+  text-align: center;
+  font-size: 33px;
+}
+#formQ input{
+  width: 170px;
+  box-shadow: 2px 2px 2px black;
+}
+#tableQ1{
+  margin: 0 auto;
+}
+#formQ button#butQ{
+  margin-left: 40%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
+  width: 70px;
+}
+section#utile{
+  position: relative;
+  top: -510px;
+  margin-left: 60%;
+  margin-right: 5%;
+  background-color: rgba(128,128,128,1);
+  width: 500px;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+}
+section#utile .article{
+  margin: 30px 30px 0px 30px;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: white;
+}
+section#utile .article h2{
+  text-align: center;
+  font-family: lora;
+}
+section#utile .article p{
+  text-align: center;
+  line-height: 1.5em;
+  font-weight: bold;
+  width: 400px;
+}
+/************************page:Contact************************/
+section#contact1{
+  margin-top: 80px;
+  margin-bottom: 20px;
+  padding: 0px 10px 0px 10px;
+  background-color: rgba(128,128,128, 0.8);
+}
+section#contact1 div#firstDivCont{
+  display: inline-block;
+  width: 500px;
+  text-align: center;
+}
+section#contact1 div#firstDivCont h1{
+  color: white;
+  font-size: 30px;
+}
+section#contact1 div#firstDivCont p{
+  font-weight: bold;
+  line-height: 1.5em;
+  font-size: 20px;
+}
+section#contact2 form#cont2{
+  color: white;
+  width: 100%;
+  background-color: rgba(128,128,128,.5);
+}
+section#contact2 form#cont2 input{
+  box-shadow: 2px 2px 2px black;
+  width: 180px;
+}
+/********************Merci**********************/
+div#merci1{
+  height: 500px;
+  margin-top: 30px;
+  margin-bottom: -80px;
+  border-radius: 40px;
+  background-color: #292C35;
+}
+div#merci1 p, h1{
+  color: white;
+}
+div#merci1 p{
+  font-size: 23px;
+  margin-left: 220px;
+  line-height: 1.5em;
+}
+/**************************SUISSE*****************************/
+div#blocSuisse{ 
+  margin: 30px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  background-color: rgba(128,128,128,0.7);
+  padding: 50px;
+}
+div#blocSuisse p{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: lora;
+  line-height: 1.3em;
+}
+div#blocSuis1{
+  margin: 60px;
+}
+div#blocSuis1 img{
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  margin-right: 100px;
+  margin-bottom: 70px;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

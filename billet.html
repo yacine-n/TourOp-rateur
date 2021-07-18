@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Billeterie</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" href="image/logoblanc.png">
+
+    <script type="text/javascript">
+        function func(){
+              redirect.style.marginTop = "-55px";
+              redirect.style.transition = 1;
+              conf.style.opacity = 0;
+              tnom.innerHTML = "Félicitation "+ document.getElementById("pren").value + " réservation réussi !";
+   
+             var t=3;
+              setInterval(function() {
+              console.log(t);
+                 if(t==0){
+                     document.location.href = "merci.html";
+                 }
+                 t--;
+               }, 1000);
+        }
+    </script>
+</head>
+<body background="image/c8.jpg">
+
+    <img src="image/logotrans.png" class="logo">
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Vision et Croissance</a> </li>
+                <li> <a href="info.html">Opérations Internationales</a> </li>
+                <li> <a href="billet.html">Billeterie Internationale et Intérieure</a> </li>
+                <li> <a href="visa.html">Traitement des Visas</a> </li>
+                <li> <a href="question.html">Conseils pour les Voyageurs</a> </li>
+                <li> <a href="contact.html">Contacts de la société</a> </li>
+            </ul>
+        </nav>
+    </header>
+         <br><br><br><br><br>
+       <h1 id="h">Réservation</h1>
+        <br><br>
+
+            <form id="firstForm">
+
+              <table id="firstTab">
+                  <tr>
+                      <td> <label for="">Prénom:</label> </td>
+                      <td> <input type="text" placeholder="saisir votre prénom" id="pren"> </td>
+                  </tr>
+
+                  <tr>
+                    <td> <label for="">Nom:</label> </td>
+                    <td> <input type="text" placeholder="saisir votre nom" id="nom"> </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="">Mail:</label> </td>
+                    <td> <input type="text" placeholder="saisir votre addresse mail" id="mail"> </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="">Date de naissance:</label> </td>
+                    <td> <input type="date" name="date" id="nais"> </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="">Date d'arrivée souhaitée:</label> </td>
+                    <td> <input type="date" name="date"> </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="">Date de retour souhaité:</label> </td>
+                    <td> <input type="date" name="date"> </td>
+                </tr>
+
+                <tr>
+                    <td> <label aria-required="true">Souhaiter-Vous un vol?</label> </td>
+                    <td> <label>Oui</label> <input type="radio" name="pays">
+                   <label>Non</label> <input type="radio" name="pays"> </td>
+                </tr>
+
+                <tr>
+                    <td> <label aria-required="true">Quel type de vol?</label> </td>
+                    <td> <label style="margin-right: 0px;">Standard</label> <input type="radio" name="type">
+                    <label style="margin-right: 0px;">Affaire</label> <input type="radio" name="type"> 
+                    <label style="margin-right: 0px;">VIP</label> <input type="radio" name="type"> </td>
+                </tr>
+
+                <tr>
+                    <td> <label aria-required="true">Souhaiter-Vous un hotel?</label> </td>
+                    <td> <label>Oui</label> <input type="radio" name="hotel">
+                   <label>Non</label> <input type="radio" name="hotel"> </td>
+                </tr>
+
+                <tr>
+                   <td> <label for="">Type d'hotel:</label> </td> 
+                   <td>
+                       <select id="select1">
+                           <option>--Veillez choisir--</option>
+                           <option>Economique:20.000f/j</option>
+                           <option>Classic:50.000f/j</option>
+                           <option>Normal:75.000f/j</option>
+                           <option>Luxe:200.000f/j</option>
+                           <option>VIP:400.000f/j</option>
+                       </select> 
+                   </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="">Destination:</label> </td>
+                    <td>
+                       <select id="select2">
+                           <option>--Veillez choisir--</option>
+                           <option>Thailand</option>
+                           <option>Malaisie</option>
+                           <option>Hong-Kong</option>
+                           <option>Chine</option>
+                           <option>Singapour</option>
+                           <option>Nouvelle Zélande</option>
+                           <option>Maldives</option>
+                           <option>Maurice</option>
+                       </select>
+                    </td><br>
+                </tr>
+
+                <tr><td colspan="2" id="rouge" style="text-align: center;"></td></tr>
+              </table>
+              <br><br><br><br>
+               
+               <button type="submit" id="submit">Envoyer</button>
+                
+               
+               <div id="redirect">
+                   <h3 id="tnom"></h3>
+                   <h4>Redirection en cours...</h4>
+               </div>
+                
+               <br><br><br>
+                  
+            </form>
+            <button type="submit" id="conf" onclick="func()">Confirmer</button>
+             
+                 
+
+    <section id="sect">
+        <table id="secondTab">
+            <tr>
+              <td> <img src="image/eco.jpg"> </td>
+              <td>Economique</td>
+            </tr>
+
+            <tr>
+                <td> <img src="image/class.jpg"> </td>
+                <td>Classic</td>
+              </tr>
+
+              <tr>
+                <td> <img src="image/norm.jpg"> </td>
+                <td>Normale</td>
+              </tr>
+
+              <tr>
+                <td> <img src="image/luxe.jpg"> </td>
+                <td>Luxe</td>
+              </tr>
+
+              <tr>
+                <td> <img src="image/vip.jpg"> </td>
+                <td>VIP</td>
+              </tr>
+        </table>
+    </section>
+    <footer>
+        <div id="me">
+ 
+         <section>
+             <h3>Gardons le contact</h3>
+             <p>
+                 +221 33 875 99 99 <br>
+                 +221 33 569 55 55 <br>
+                 info@leadtheroad.com <br>
+             </p>
+         </section>
+    
+           <section>
+             <h3>Horaires d'ouverture</h3>
+             <p>
+                 lundi au vendredi: <br>
+                 09h-13h/15h-18h <br>
+                 samedi: 
+                 09h-12h <br>
+             </p>
+         </section>
+    
+           <section>
+             <h3>Inscrivez-vous à notre <br> newsletter</h3>
+                 <tr>
+                     <td> <input type="text" placeholder="example@gmail.com"> </td>
+                     <td> <button type="submit">Envoyer</button> </td>
+                 </tr>     
+             </section>
+ 
+        </div>
+     </footer>
+
+    <script type="text/javascript">
+      
+      document.getElementById("submit").addEventListener("click", retour)
+      function retour(e) {
+
+var t1 = document.getElementById("pren").value;
+var t2 = document.getElementById("nom").value;
+var t3 = document.getElementById("mail").value;
+var t4 = document.getElementById("nais").value;
+var rouge = document.getElementById("rouge");
+
+if(t1==""){
+   e.preventDefault();
+   pren.style.border = "1px solid red";
+   rouge.innerHTML = "Veuillez remplir tous les champs en rouge !";
+   rouge.style.color = "white";
+   rouge.style.backgroundColor = "red";
+   rouge.style.borderRadius = "10px";
+   rouge.style.padding = "10px";
+   
+}
+
+if(t2==""){
+   e.preventDefault();
+   nom.style.border = "1px solid red";
+   rouge.innerHTML = "Veuillez remplir tous les champs en rouge !";
+   rouge.style.color = "white";
+   rouge.style.backgroundColor = "red";
+   rouge.style.borderRadius = "10px";
+   rouge.style.padding = "10px";
+   
+}
+
+if(t3==""){
+   e.preventDefault();
+   mail.style.border = " 1px solid red";
+   rouge.innerHTML = "Veuillez remplir tous les champs en rouge !";
+   rouge.style.color = "white";
+   rouge.style.backgroundColor = "red";
+   rouge.style.borderRadius = "10px";
+   rouge.style.padding = "10px";
+
+}
+
+if(t4==""){
+   e.preventDefault();
+   nais.style.border = " 1px solid red";
+   rouge.innerHTML = "Veuillez remplir tous les champs en rouge !";
+   rouge.style.color = "white";
+   rouge.style.backgroundColor = "red";
+   rouge.style.borderRadius = "10px";
+   rouge.style.padding = "10px";
+   
+}else{
+   e.preventDefault();
+   submit.style.opacity = 0;
+   submit.style.transition = "0.5s";
+   conf.style.marginTop = "500px";
+   conf.style.transition = "0.5s";
+}
+
+}
+
+var	h=1;
+setInterval(function () {
+if (h==0) {
+   firstForm.style.marginTop = "-20px";
+   firstForm.style.transition = "1s";
+}
+h--;
+},100);
+    </script>
+
+ </body>
+ </html>
